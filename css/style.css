@@ -1,0 +1,512 @@
+body {
+    overflow-x: hidden;!important;
+    font-family: 'Quicksand', sans-serif;
+   
+    height: 100vh;
+    margin: 0;
+   
+    display: flex;
+    flex-direction: column;
+
+    background-color: #f2f2f2;
+    
+  }
+
+  /* HEADER START */
+  header.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    background-color: #12372A;
+    color: #FBFADA;
+  }
+
+  header.navbar-container .nav-list ul {
+    display: flex;
+    list-style: none;
+    
+    gap: 10px;
+  }
+
+  header.navbar-container .nav-list li {
+    list-style-type: none;
+  }
+
+  header.navbar-container .nav-list li a{
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+   
+    text-decoration: none;
+    font-size: 1.05rem;
+    /* font weight regular */
+    font-weight: 400;
+
+    color: white;
+   
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* logo */
+  header.navbar-container .logo p {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  /* cta donasi */
+  header.navbar-container .cta-donasi a{
+    padding: 0.5rem 1.5rem;
+    background-color: #f5a623;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .hamburger-menu {
+    display: none; /* Sembunyikan hamburger menu secara default pada tampilan desktop */
+  }
+
+  .hamburger-icon {
+      width: 30px;
+      height: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+  }
+
+  .hamburger-icon span {
+      width: 100%;
+      height: 2px;
+      background-color: #ffffff;
+      transition: all 0.3s ease;
+  }
+
+  /* Animasi hamburger menu saat di-klik */
+  .hamburger-icon.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger-icon.active span:nth-child(2) {
+      opacity: 0;
+  }
+
+  .hamburger-icon.active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+  /* HEADER END */
+
+
+  /* HERO START */
+  .hero{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+
+    background-color: #12372A;
+  }
+
+  .hero .hero-content{
+    /* text-center */
+    text-align: center;
+    padding: 2rem;
+  }
+
+  /* text */
+  .hero .hero-content h1{
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .hero .hero-content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #FBFADA;
+  }
+
+
+  .hero .hero-content .hero-cta a{
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+
+    background-color: #f5a623;
+    color: #12372A;
+  }
+  /* HERO END */
+
+  /* PARTNER START */
+  aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Gunakan width 100% untuk mengisi lebar parent */
+  }
+
+  .partner {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Mengatur elemen vertikal ke tengah */
+      padding: 10px 100px;
+      width: auto; /* Batasi lebar aside */
+
+      margin-top:-150px; 
+
+      background-color: #D3D3D3;
+      border-radius: 10px;
+  }
+
+  .partner h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 1rem;
+
+      color: #12372A;
+  }
+
+  .partner-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px; /* Jarak antara gambar */
+    margin-top: 1rem;
+  }
+
+  .partner-item img {
+      width: 150px; /* Sesuaikan dengan lebar gambar */
+      height: auto; /* Atur ketinggian gambar secara otomatis */
+  }
+  /* PARTNER END */
+   
+
+  /* KEGIATAN START */
+  .kegiatan {
+    margin-top: 50px;
+    padding: 20px 10rem;
+  }
+
+  .kegiatan h2 {
+      font-size: 24px;
+      color: #333;
+      text-align: center;
+  }
+
+  .kegiatan-list {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+  }
+
+  .kegiatan-item {
+      width: 300px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      
+  }
+
+  .kegiatan-item img {
+    width: 100%;
+    height: 200px; /* Anda dapat menyesuaikan tinggi sesuai kebutuhan */
+    object-fit: cover; /* Memastikan gambar mengisi area dengan mempertahankan proporsinya */
+    border-radius: 8px;
+  }
+
+  .kegiatan-item h3 {
+      font-size: 20px;
+      color: #333;
+      margin-top: 15px;
+  }
+
+  .kegiatan-item p {
+      font-size: 16px;
+      color: #666;
+      margin-top: 10px;
+  }
+
+  /* button */
+  .cta-button {
+    background-color: #f5a623;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button:hover {
+      background-color: #e29412;
+  }
+  /* KEGIATAN END */
+
+  /* TENTANG KAMI START */
+  .tentang-kami {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #12372A;
+
+    padding: 20px 10rem;
+  }
+
+  .gambar img {
+      width: 350px; 
+      border-radius: 10px; /* Atur sudut gambar */
+      margin-right: 20px; /* Jarak antara gambar dan teks */
+  }
+
+  .teks {
+      flex-grow: 1; /* Biarkan teks mengisi ruang yang tersedia */
+      max-width: 900px; /* Batasi lebar teks */
+  }
+
+  .teks h2 {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 10px; /* Jarak antara judul dan teks */
+  }
+
+  .teks p {
+      font-size: 16px;
+      color: #FBFADA;
+      margin-bottom: 20px; /* Jarak antara teks dan tombol CTA */
+
+      /* maksimal lebar paragraf */
+      max-width: 100%;
+  }
+
+  .cta-button {
+      background-color: #f5a623;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+  }
+
+  .cta-button:hover {
+      background-color: #e29412;
+  }
+
+  /* TENTANG KAMI END */
+
+  /* FOOTER START */
+
+  /* HUBUNGI KAMI START */
+  .hubungi-kami {
+    display: flex;
+    align-items: center;
+
+    padding: 20px 10rem;
+  }
+
+  .konten {
+      flex-grow: 1;
+      padding: 20px;
+  }
+
+  .konten h2 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+  }
+
+  .konten p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 20px;
+  }
+
+  .form-group {
+      margin-bottom: 15px;
+  }
+
+  .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+  }
+
+  .form-group input,
+  .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  }
+
+  .form-group textarea {
+      height: 100px;
+  }
+
+  .cta-button {
+      background-color: #f5a623;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+
+  .cta-button:hover {
+      background-color: #e29412;
+  }
+
+  /* HUBUNGI KAMI END */
+
+  /* FOOTER START */
+  .footer {
+    background-color: #12372A;
+    color: #FBFADA;
+    padding: 20px;
+    text-align: center;
+}
+
+  /* FOOTER END */
+
+  /* RESPONSIVE */
+
+  /* Media query untuk tablet */
+@media (max-width: 900px) {
+
+  header.navbar-container {
+    padding: 1rem; /* Mengurangi padding pada ponsel */
+  }
+
+  .hero {
+    height: 550px; /* Mengurangi tinggi hero pada tablet */
+  }
+
+  .partner {
+    margin-top: -100px; /* Mengurangi margin pada tablet */
+    width: auto; /* Batasi lebar aside */
+    padding: 10px 10px; /* Mengurangi padding pada tablet */
+  }
+
+  .partner-item img {
+    width: 100px; /* Sesuaikan dengan lebar gambar */
+    height: auto; /* Atur ketinggian gambar secara otomatis */
+  }
+
+  .kegiatan {
+    margin-top: 10px;
+    padding: 10px 10rem;
+  }
+  .kegiatan-item {
+    width: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .tentang-kami {
+    display: flex;
+    gap: 20px; /* Jarak antara gambar dan teks */
+    flex-direction: column; /* Mengubah tata letak menjadi vertikal */
+  }
+  
+}
+
+/* Media query untuk ponsel */
+@media (max-width: 480px) {
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column; /* Mengatur menu navigasi menjadi vertikal */
+    position: fixed;
+    top: 0;
+    right: -250px; /* Mulai di luar layar */
+    width: 250px;
+    height: 100%;
+    background-color: #12372A;
+    padding-top: 60px; /* Padding untuk menghindari tumpang tindih dengan header */
+    transition: right 0.3s ease; /* Animasi perubahan posisi */
+}
+
+.nav-list.active {
+    display: block;
+    right: 0; /* Geser menu ke posisi yang benar */
+}
+
+.nav-list ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.nav-list li a {
+    display: block;
+    padding: 1rem;
+    color: #FBFADA;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    background-color: #0d2c20;
+}
+  .nav-list, .cta-donasi {
+    display: none; /* Menghilangkan navigasi saat lebar layar kurang dari atau sama dengan 768px (perangkat seluler) */
+  }
+
+  .hero {
+    height: 450px; /* Mengurangi tinggi hero pada tablet */
+  }
+
+  .partner {
+    margin-top: -10px; /* Mengurangi margin pada tablet */
+    width: auto; /* Batasi lebar aside */
+    padding: 10px 10px; /* Mengurangi padding pada tablet */
+  }
+
+  .kegiatan {
+    margin-top: 50px;
+    padding: 20px 40px;
+    width:auto;
+  }
+
+  .tentang-kami {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #12372A;
+
+    padding: 20px 40px;
+  }
+
+  .hubungi-kami {
+    display: flex;
+    align-items: center;
+
+    padding: 20px 40px;
+  }
+
+  .footer {
+      padding: 10px; /* Mengurangi padding pada ponsel */
+  }
+}
