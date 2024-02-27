@@ -49,6 +49,12 @@ body {
     transition: all 0.2s ease-in-out;
   }
 
+    /* Efek animasi saat dihover */
+    .nav-list ul li a:hover {
+      color: #888; /* Warna teks berubah menjadi merah saat dihover */
+    }
+
+
   /* logo */
   header.navbar-container .logo p {
     font-size: 1.5rem;
@@ -131,15 +137,22 @@ body {
   }
 
 
-  .hero .hero-content .hero-cta a{
+  .hero .hero-content .hero-cta a {
     padding: 0.5rem 1.5rem;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
-
     background-color: #f5a623;
     color: #12372A;
-  }
+}
+
+.hero .hero-content .hero-cta a:hover {
+    background-color: white;
+    background-color: #e29412;
+}
+
+
+  
   /* HERO END */
 
   /* PARTNER START */
@@ -288,18 +301,6 @@ body {
       max-width: 100%;
   }
 
-  .cta-button {
-      background-color: #f5a623;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-  }
-
-  .cta-button:hover {
-      background-color: #e29412;
-  }
 
   /* TENTANG KAMI END */
 
@@ -441,6 +442,9 @@ body {
     background-color: #12372A;
     padding-top: 60px; /* Padding untuk menghindari tumpang tindih dengan header */
     transition: right 0.3s ease; /* Animasi perubahan posisi */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-list.active {
